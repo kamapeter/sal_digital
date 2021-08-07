@@ -1,0 +1,356 @@
+/*topNav*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+font-family: 'Montserrat', sans-serif;
+}
+body{margin: 0;padding:0;}
+.topNav{
+		position: sticky;
+		top: 0;margin: 0;
+		width: 100%;
+		overflow: hidden;
+		background-color: #725ac1;
+		z-index: 3;
+		vertical-align: middle;
+}
+.topNav *{
+		display: block;
+		float: right;
+		padding: 7px 8px;
+		text-align: center;
+}
+.icons{
+		width: 24px;
+		height: 24px;
+}
+.topNav .logolink{
+  padding: 0px;
+}
+.logo{width: 40px; height: auto;}
+
+#openBtn{float: left;font-size: 24px; color: white;}
+.avatar{
+		background-image: url('icons/avatar.svg') no-repeat;
+}
+.inpCon{
+		display: inline-flex;
+		width: 380px;
+		padding: 0;
+}
+/**{box-sizing: border-box;}*/
+.searchBox{
+		width: 300px;
+		outline: none;
+		border-radius: 5px;
+		padding: 10px;
+		border: 1px #fff solid;
+}
+.s-icon{
+		color: #fff;
+		background-color: #ff933f;
+		padding: 10px 5px;
+		display: inline-block;
+		width: 30px;
+		margin-left: -5px;
+		float: left;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+}
+a{
+  text-decoration: none;
+}
+.sideNav{
+		z-index: 5;
+		position: fixed;
+		top: 0;
+		width: 300px;
+		background-color: #fdfdfd;
+		display: none;
+		bottom: 0;
+}
+.closeBtn {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	float: right;
+	font-size: 2e;
+	margin-left: 50px;
+}
+.countCon{
+  position: relative;
+}
+.count{
+  background: #E33F3F;
+  display: none;
+  color: #fff;
+  position: absolute;
+  right: 2px;top: -1.2px;
+  border-radius: 50%;
+  width: 10px;
+  font-size: 0.6rem;
+}
+.sideNav > .logo{
+		 display: block;
+		 margin: 0 auto;
+		 width: 60px;
+		 height: auto;
+}
+.linksList, .linksList *{
+		list-style-type: none;
+		padding: 5px;
+}
+.sideNav a,.backBtn{
+		font-size: 1.2rem;
+		color: #725ac1;
+}
+.backBtn{
+  margin-top: 10px;
+  display: inline-block;
+}
+.linkH > a{
+		font-weight: bold;
+		font-size: 1.3rem;  
+		color: #ffbd15;
+}
+.sideNav .fa,.fas{
+		font-size: 23px;
+}
+.slideIn{
+		/*display: flex;
+		flex-direction: column;
+		align-items: flex-start; */
+		display: block;
+		animation: slideIn 0.5s ease-in 0s 1 normal forwards;
+}		
+@keyframes slideIn{
+		from{
+				left: -100%; opacity: 0;
+		}
+		to{
+			left: 0%; opacity: 1;	
+		}
+}
+.slideOut{
+		animation: slideOut 0.5s ease-in 0s 1 normal forwards;
+}
+@keyframes slideOut{
+		from{
+			left: 0%; opacity: 1;	
+		}
+		to{
+			left: -100%; opacity: 0;
+		}
+}
+.fa-shopping-cart:not(button .fa-shopping-cart){
+  animation: cart 5s ease-in 0s infinite normal forwards;
+}
+@keyframes cart{
+  90%{transform: translateX(0);}
+  100%{transform: translateX(30px) rotate(-35deg);}
+}
+.carousel,.main,.catalogue,.loadContents{
+  min-height: 200px;
+}
+.cartp{
+  height: 200px; 
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+.main{
+		display: flex;
+		flex-direction: column;
+		overflow-y: scroll;
+		overflow-x: hidden;
+}
+.imageHeader{
+		background: url('../icons/back.png') no-repeat;
+		background-size: 100%;
+		display: flex;
+		width: 100%;
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+		color: #725ac1;
+		margin: 0;
+}
+.carousel a,.carousel .itemCon{
+		color: black;
+		display: flex;
+		-webkit-tap-highlight-color: rgba(144,90,193,0.1);
+}
+.carouselCon{margin: 5px 0;}
+.carouselCon .title,.title{
+	margin: 8px 10px 15px 15px;
+	display: block;
+}
+.carousel{
+		width: 100%;
+		overflow-x: scroll;
+		display: flex;
+		justify-content: left;
+		scroll-behaviour: smooth;
+		scroll-snap-type: x mandatory;
+	/*	align-items: flex-end;*/
+}
+.carousel .item,.catalogue .item{
+		width: 150px;
+		margin: 0px 5px 10px 5px;
+		box-shadow: 0 4px 8px 0 rgb(230,230,230),
+		-4px -4px 7px rgb(230,230,230);
+		position: relative;
+		border-radius: 5px;
+}
+.item .itemPic{
+		width: 100%;
+		height: 160px;
+		object-fit: contain;
+		margin: 5px 0 0 0;
+}
+.item >h5,.item>h6{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin: 5px;
+		align-self: flex-end;
+}
+.oldPrice{
+  text-decoration: line-through;
+  color: grey;
+}
+.item .discount{
+		position: absolute;
+		left: 75%;
+		top: 5%;
+		display: block;
+		width: 25px; height: 25px;
+		border: 1px #ff933f solid;border-radius: 5px;
+		background-color: #fff200;
+		color: #ff933f;
+		font-size: 0.6rem;
+		text-align: center;
+		line-height: 25px;
+}
+@media(min-width: 600px){
+		.item .itemPic{height: 200px}
+		.item{width: 350px; margin: 10px;}
+		.inpCon{margin-top: 7px;}
+}
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.catalogue{
+		width: 100%;
+		margin-top: 10px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+}
+ .addToCartBtn{
+		width: 90%;
+		text-align: center;
+		background: #725ac1;color: #fff;
+		display: block;
+		margin: 5px auto;
+		border-radius: 5px;
+		padding: 7px;
+}
+.callBtn{
+		display: block;
+		margin: 5px auto;
+		border-radius: 5px;
+}
+.footer{
+		background-color: #494553;
+		color: #aaa;
+		margin: 2px 0 0 0;
+		width: 100%;
+		overflow: hidden;
+		display: flex;
+		flex-flow: column wrap;
+		text-align: center;
+}
+.footer >*,.footer>*>*>*{
+		background-color: #494553;
+		color: #aaa;
+		list-style-type: none;
+		
+}
+.footer a:hover{color: #fff;}
+footer >h3,h4{
+		margin-bottom: 5px;
+}
+.footer ul{
+		display: flex;
+		justify-content: space-evenly;
+		flex-flow: row wrap;
+		width: 90%;
+		padding: 5px;
+		font-size: 1.1rem;
+		align-self: center;
+}
+.footer hr{
+		width: 90%;
+		border-color: #aaa;
+}
+.footer li{
+		display: block;
+		margin: 5px 0;
+}
+.big{
+  display: none;
+}
+@media (max-width: 450px) {
+  .topNav .inpCon{
+    display: flex;
+    width: 330px;
+    margin: 2px auto;
+    float: none;
+  }
+  .topNav .searchBox,.s-icon{
+    display: inline-block;
+  }
+}
+@media (min-width: 900px) {
+  #mySideNav{
+    display: block;
+    bottom: auto;
+    top: auto;
+    position: fixed;
+    min-height: auto;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  .topNav{
+    position: sticky;
+    top: 0;
+  }
+  .big{
+    display: block;
+  }
+  .main{
+    margin-left: 300px;
+    position: sticky;
+    width: calc(100vw - 300px);
+  }
+  .small{
+    display: none;
+  }
+  .topNav .logolink{float: left;}
+  .footer{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    bottom: auto;
+  }
+  .popup,body .itemInfo,.dialog{
+    width: 600px;
+    height: auto;
+  }
+  .btnCon{
+    display: flex;
+  }
+}

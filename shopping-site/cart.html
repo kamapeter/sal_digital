@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Page title</title>
+  <meta http-equiv="CONTENT-TstorageYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#725AC1">
+  <meta name="msapplication-navbutton-color" content="#725AC1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#725AC1">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="topNav">
+    <a href="#" id="openBtn"><span class="icons small" id="open">☰</span></a>
+    <a href="#" class="countCon"><img src="icons/cart.svg" alt="cart icon" class="icons cart"><span class="count">5</span></a>
+    <a href="reg/login.html"><img src="icons/avatar.svg" alt="avatar icon" class="icons avatar"></a>
+    <a href="index.html" class="logolink"><img src="icons/logo.png" alt="SDQ Logo" class="logo"></a>
+  </div>
+  <div class="sideNav" id="mySideNav">
+    <a href="javascript:void(0)" class="closeBtn small">×</a>
+    <img src="icons/logo.png" alt="SDQ Logo" class="logo">
+    <ul class="linksList">
+      <li class="linkH"><a href="#">Accounts</a></li>
+      <li><a href="#"><i class="fa fa-fw">&#xf004;</i> Saved Items</a></li>
+      <li><a href="#">Orders</a></li>
+      <li class="linkH"><a href="#">Categories</a></li>
+      <li><a href="#"><i class="fa fa-fw">&#xf21e;</i> Health and Beauty</a></li>
+      <li><a href="phones.html"><i class="fa fa-fw">&#xf10b;</i> Phones & Tablet</a></li>
+      <li><a href="#"><i class="fa fa-fw">&#xf109;</i> Laptop</a></li>
+      <li><a href="#"><i class="fa fa-fw">&#xf02d;</i> Books</a></li>
+      <li><a href="#"><i class="fa fa-fw">&#xf1b9;</i> Automobiles</a></li>
+      <li><a href="#"><i class="fa fa-plug fa-fw" aria-hidden="true"></i> Electronics</a></li>
+      <li><a href="#"><i class="fas fas-tshirt fa-fw"></i> Fashion </a></li>
+    </ul>
+    </ul>
+  </div>
+  
+  <div class="main">
+    <span><a href="javascript:void(0)" class="backBtn"> 
+     < Back
+    </a></span>
+  <div class="cartItems">
+    <h3 class="title">Cart Items</h3>
+    <div class="loadCart loadContents">
+
+    </div>
+    <h2 class="title">Total: <span id="total"></span></h2>
+  </div>
+  <div class="btnCon">
+    <a href="reg/login.html"><button class="bigBtn checkOut">Check Out </button>
+    </a>
+    <a href="tel: +2349086417512"><button class="bigBtn order">Order </button></a>
+  </div>
+</div>
+<footer class="footer">
+  <h3>Quick Links</h3>
+  <ul>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Become A Seller</a></li>
+    <li><a href="#">Report A Product</a></li>
+  </ul>
+  <hr>
+  <h3>Sal-Digital</h3>
+  <p class="big">
+    mazim sale singulis nostrum mattis. vidisse postea altera efficiantur lacus an ubique eam necessitatibus voluptatum mediocritatem dapibus fugit. nam no euripidis fastidii pertinacia suspendisse invenire similique sapien vituperatoribus metus.
+  </p>
+  <hr>
+  <h4>Sal-digital All Rights Reserved © 2021</h4>
+</footer>
+<div class="overlay"></div>
+<div class="dialog popup">
+  <a href="javascript:void(0)" class="closeBtn">x</a>
+  <h3>are you sure you want to remove this item?</h3>
+  <button class="remove">Remove</button> <button class="cancel">Cancel</button>
+</div>
+<script src="scripts/nav.js"></script> 
+<script src="scripts/util.js"></script>
+</body>
+</html>

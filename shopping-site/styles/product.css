@@ -1,0 +1,232 @@
+.productPicCon {
+	position: relative;
+	height: 310px;
+	text-align:cener;
+	overflow-x: hidden;
+	margin: 5px auto;
+	border-radius: 5px;
+	box-shadow: 0 6px 10px 0 rgb(230,220,220),
+		-4px -4px 7px rgb(230,230,230);
+}
+.width95{width: 95%;}
+.width100{width: 100%;}
+.bottom .addToCartBtn{width: 70%; padding: 10px 20px;}
+.bottom .callBtn{
+		width: 25%; 
+		padding: 10px; 
+		background: #fff;
+		border-radius: 5px;
+		box-s0dow: 3px 3px 5px #fff;
+		border: 1px solid #725ac1;
+		font-size: 1.5em;
+}
+.productPicCon img{
+		object-fit: contain;
+		width: 95%;
+		height: 300px;
+		position: absolute;
+		top: 0;
+}
+
+.controlBtn{
+		display: block;
+		top: 50%;transform: translateY(-50%);
+		position: absolute;
+		font-size: 3em;
+		color: black;
+		background: #fcfcfc;
+		border-radius: 50%;
+		text-decoration: none;
+		padding: 10px;
+}
+.productPicCon #prevBtn{
+		left: 2%;
+}
+.productPicCon #nextBtn{
+		right: 2%;
+}
+.moveIn{animation: moveIn 0.5s ease-in 0s 1 normal forwards;}
+ @keyframes moveIn{
+ 		from{left: 100%;}
+ 		to{left: 0%;}
+ }
+.moveOut{animation: moveout 0.5s ease-in 0s 1 normal forwards;}
+ @keyframes moveout{
+ 		from{left: 0%;}
+ 		to{left: -100%;}
+ }
+ button{
+   border: none;
+   outline: none;
+ }
+ .bigBtn{
+   width: 315px;
+   border-radius: 3px;
+   display: block;
+   margin: 8px auto;
+   color: #fff;
+   padding: 8px;
+   font-size: 1.3em;
+ }
+ .checkOut{background-color: #725ac1;}
+ .order{background-color: #ff933f;}
+.genDrpShadow{
+		box-shadow: 0 4px 8px 0 rgb(230,230,230),
+		-4px -4px 7px rgb(230,230,230);
+		display: flex;
+		flex-flow:column wrap;
+		border-radius: 5px;
+		margin: 5px auto;
+}
+.centered > *{
+  align-items: center;
+  margin: 5px;
+}
+.itemInfo .closeBtn{
+  font-size: 1.5em;
+  z-index: 15;
+}
+.purple{color: #725ac1;}
+.centered{
+  align-items: center;
+}
+.itemInfo .addToCartBtn{
+  width: 70%;
+  padding: 10px 5px;
+}
+.itemInfo .qtyCon{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 75%;
+}
+.itemInfo .callBtn{
+  width: 20%;
+  padding: 10px 5px;
+}
+.itemInfo .qtyBtn{
+  padding: 10px 5px;
+}
+.overlay{
+  position: fixed;
+  top: 0;bottom: 0;
+  left: 0; right: 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 10;
+  display: none;
+}
+.popup{
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  display: none;
+  opacity: 1;
+  z-index: 15;
+  background-color: #fff;
+}
+.itemInfo{
+  width: 80%; height: 95%;
+  overflow-y: scroll;
+}
+.bottom{
+		position: sticky;
+		bottom: 0;
+		padding: 10px 0;
+		box-shadow: 0 4px 8px 0 rgb(230,230,230),
+		-4px -4px 7px rgb(230,230,230);
+		opacity: 2;
+		background: #fefefe;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+}
+.qtyBtn{
+		width: 15%;
+		background: #725ac1;
+		color: #fff;
+		border-radius: 5px;
+}
+.qtyCon{
+		width: 100%; 
+		margin: 5px auto;
+}
+.qty{
+		width: 50%;
+		border: 1px #725ac1 solid;
+		border-radius: 3px;
+		outline: none;
+		text-align: center;
+}
+.qtyBtn:active{background: #5E3185;}
+.loadCart{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.cartItem{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 80%;
+  box-shadow: 0 6px 10px 0 rgb(235, 235, 235),
+  -4px -4px 7px rgb(230, 230, 230);
+  padding: 20px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+.cartItem img{
+  width: 35%;
+}
+.cartItem .cartItemInfo{
+  width: 55%;
+}
+.cartItem .botto{
+  border-top: 1px #C5C6CC solid;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 5px 0px -15px 0px;
+}
+.cartItem .qtyBtn{
+  border-radius: 50%;
+  font-size: 0.7em;
+  padding: 2px 2.5px;
+}
+.cartItem .qtyCon{
+  width: 100px;
+  margin: -20px 0 0 auto;
+}
+.cartItem .qty{
+  width: 50px;
+  border: none;
+  box-shadow: 3px 3px 5px #ddd;
+}
+.cartItems> h2{width: 90%; margin: 0 auto;}
+.cartItems #total{float: right;}
+.cartItem .purple>*{font-weight: bold;}
+.cartItem .oldPrice{
+  display: inline-block;
+  border-left: 1px #C5C6CC solid;
+  padding-left: 5px;
+}
+.dialog{
+  width: 250px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 15px;
+}
+.dialog button{
+  width: 100px;
+  border-radius: 3px;
+  color: #fff;
+  padding: 6px;
+  margin: 5px;
+}
+.dialog .remove{
+  background: #C23019;
+}
+.dialog .cancel{
+  background: #ff933f;
+}

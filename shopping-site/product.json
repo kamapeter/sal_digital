@@ -1,0 +1,181 @@
+[
+  {
+    "name": "Tecno Camon 16 Pro",
+    "discount": "20",
+    "price": "65000",
+    "imgSrcs": ["item-pics/phones-pic/camon16a.jpeg", "item-pics/phones-pic/camon17b.jpeg"
+    ],
+    "categories": "phones topItems"
+  },
+  {
+    "name": "Tecno Camon 17 Pro",
+    "discount": "10",
+    "price": "95000",
+    "imgSrcs": ["item-pics/phones-pic/camon17a.jpeg","item-pics/phones-pic/camon17b.jpeg"
+      ],
+    "categories": "phones topItems"
+  },
+  {
+    "name": "Egg Rolls",
+    "discount": "5",
+    "price": "500",
+    "imgSrcs": ["item-pics/no-cat-pics/eggrollB.jpeg", "item-pics/no-cat-pics/eggrollA.jpg","item-pics/no-cat-pics/eggrollC.jpeg"
+        ],
+    "categories": "food topItems",
+    "brand": "Naomi's Burgers"
+  },
+  {
+    "name": "Samosa",
+    "discount": "5",
+    "price": "500",
+    "imgSrcs": ["item-pics/no-cat-pics/samosaA.jpg", "item-pics/no-cat-pics/samosaB.jpg", "item-pics/no-cat-pics/samosaC.jpg"
+        ],
+    "categories": "food topItems",
+    "brand": "Naomi's Burgers"
+  },
+  {
+    "name": "Meat Pie",
+    "discount": "7.5",
+    "price": "1500",
+    "imgSrcs": ["item-pics/no-cat-pics/meatPieA.jpeg",  "item-pics/no-cat-pics/meatPieB.jpeg"
+        ],
+    "categories": "food topItems",
+    "brand": "Naomi's Burgers"
+  },
+  {
+    "name": "Pizza",
+    "discount": "5",
+    "price": "2500",
+    "imgSrcs": ["item-pics/no-cat-pics/pizzaB.jpeg", "item-pics/no-cat-pics/pizzaA.jpg","item-pics/no-cat-pics/pizzaC.jpeg"
+          ],
+    "categories": "food topDeals",
+    "brand": "Naomi's Burgers"
+  },
+  {
+    "name": "Tecno Spark 7 pro",
+    "discount": "18",
+    "price": "65000",
+    "imgSrcs": ["item-pics/phones-pic/spark7a.jpeg", "item-pics/phones-pic/spark7b.jpeg"
+      ],
+    "categories": "phones topItems topDeals"
+  },
+  {
+    "name": "Samsung Galaxy A51",
+    "discount": "12",
+    "price": "111000",
+    "imgSrcs": ["item-pics/phones-pic/samsungA51A.jpeg", "item-pics/phones-pic/samsungA51B.jpeg"
+      ],
+    "categories": "phones topItems"
+  },
+  {
+    "name": "Iphone 11 pro max",
+    "discount": "20",
+    "price": "65000",
+    "imgSrcs": ["item-pics/phones-pic/iphone11proa.jpeg", "item-pics/phones-pic/iphone11prob.jpeg"
+      ],
+    "categories": "phones topItems"
+  },
+  {
+    "name": "sony  bolt headset",
+    "discount": "15",
+    "price": "15000",
+    "imgSrcs": ["item-pics/no-cat-pics/headset.jpeg"],
+    "categories": "accessories topItems"
+ },
+ {
+   "name": "Lg Bolt Blender",
+   "discount": "12",
+   "price": "25000",
+   "imgSrcs": ["item-pics/no-cat-pics/lgBlender.jpeg"],
+   "categories": "accessories topItems"
+ },
+ {
+    "name": "The Obstacle Is The Way",
+    "discount": "10",
+    "price": "2500",
+    "imgSrcs": ["item-pics/books-pics/theObstacleIsTheWayA.jpg","item-pics/books-pics/theObstacleIsTheWayB.jpg" ],
+    "categories": "books topDeals",
+    "brand": "Ryan"
+ },
+ {
+   "name": "Tesla Model S",
+   "discount": "6.8",
+   "price": "5000000",
+   "imgSrcs": ["item-pics/automobile-pics/teslaModelSB.jpg", "item-pics/automobile-pics/teslaModelSA.jpg"],
+   "categories": "books topDeals"
+ },
+ {
+   "name": "Chicken Noodles",
+   "discount": "10",
+   "price": "3500",
+   "imgSrcs": ["item-pics/no-cat-pics/noodlesA.jpg", "item-pics/no-cat-pics/noodlesB.png"
+         ],
+   "categories": "food topItems",
+   "brand": "Naomi's Burgers"
+ },
+ {
+   "name": "lenovo ThinkPad laptop",
+   "discount": "30",
+   "price": "5895000",
+   "imgSrcs": ["item-pics/laptop-pics/lenovoThinkPadA.jpeg", "item-pics/laptop-pics/lenovoThinkPadB.jpeg"],
+   "categories": "laptops topDeals"
+ }, 
+ {
+    "name": "Gold Wrist Watch",
+    "discount": "25",
+    "price": "95000",
+    "imgSrcs": ["item-pics/no-cat-pics/goldWristWatch.jpg"],
+    "categories": "Watches topDeals",
+    "brand": "Ben's Collection"
+  },
+ {
+    "name": "Celestron Power Seeker Telescope",
+    "discount": "25",
+    "price": "195000",
+    "imgSrcs": ["item-pics/no-cat-pics/celestronTelescope.jpeg"],
+    "categories": "Telescopes topDeals"
+  },
+  {
+    "name": "Silver Wrist Watch",
+    "discount": "15",
+    "price": "95000",
+    "imgSrcs": ["item-pics/no-cat-pics/silverWristWatch.jpeg"],
+    "categories": "Watches topDeals",
+    "brand": "Ben's Collection"
+  },
+  {
+    "name": "Infinix Hot 9 Pro",
+    "discount": "15",
+    "price": "80000",
+    "imgSrcs": ["item-pics/phones-pic/infinixHot9Pro.jpeg"],
+    "categories": "phones"
+  },
+  {
+    "name": "Infinix Hot 10 Pro",
+    "discount": "15",
+    "price": "97000",
+    "imgSrcs": ["item-pics/phones-pic/infinixHot10pro.jpeg"],
+    "categories": "phones"
+  },
+  {
+    "name": "Samsung Galaxy A50",
+    "discount": "17",
+    "price": "95000",
+    "imgSrcs": ["item-pics/phones-pic/samsungA50A.jpeg", "item-pics/phones-pic/samsungA50B.jpeg"],
+    "categories": "phones"
+  },
+  {
+    "name": "Itel p36",
+    "discount": "13",
+    "price": "40000",
+    "imgSrcs": ["item-pics/phones-pic/itelP36B.jpeg", "item-pics/phones-pic/itelP36A.png"],
+    "categories": "phones"
+  },
+  {
+    "name": "Itel p37 Pro",
+    "discount": "19.5",
+    "price": "45000",
+    "imgSrcs": ["item-pics/phones-pic/itelP37A.jpeg", "item-pics/phones-pic/itelP36.jpeg"],
+    "categories": "phones"
+  }
+]
