@@ -39,7 +39,7 @@ var DomUtils = {
 					}
 					return filtered;
 				}, []);
-				location.href.indexOf("index") > -1 ?
+				location.href.indexOf("index.html") > -1 ?
 					filteredItems.forEach((prod, j) => {
 						dynamicCons[i].innerHTML +=
 							`<div class='itemCon'>
