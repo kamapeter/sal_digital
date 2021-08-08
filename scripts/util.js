@@ -152,8 +152,8 @@ var DomUtils = {
 		}
 		$(".genDrpShadow").innerHTML = `
     <h3>${obj.name}<h3>
-    <h3 class ='oldPrice'> N${getOldPrice(obj.discount,obj.price)}<h3>
-    <h3> N${obj.price}<h3>
+    <h3 class ='oldPrice'> ${getOldPrice(obj.discount,obj.price)}<h3>
+    <h3> ${f.format(obj.price)}<h3>
     <h5>Brand: <span class="purple">${obj.brand? obj.brand : obj.name.firstWord()}</span></h5>
     `;
 		var btnCon = $(".bottom.panel")
