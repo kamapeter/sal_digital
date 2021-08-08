@@ -39,7 +39,8 @@ var DomUtils = {
 					}
 					return filtered;
 				}, []);
-				location.href.indexOf("index.html") > -1 ?
+				location.href.indexOf("index.html") > -1 ||
+				location.href == "https://kamapeter.github.io/sal_digital/"?
 					filteredItems.forEach((prod, j) => {
 						dynamicCons[i].innerHTML +=
 							`<div class='itemCon'>
