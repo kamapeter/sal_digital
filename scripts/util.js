@@ -188,6 +188,8 @@ var DomUtils = {
 			e.target.parentNode
 				.style.display = 'none';
 			$('.overlay').style.display = 'none';
+                        if($(".productPicCon .pic"))
+                                $(".productPicCon .pics").innerHTML = "";
 		}
 	}
 
