@@ -39,8 +39,7 @@ var DomUtils = {
 					}
 					return filtered;
 				}, []);
-				location.href.indexOf("index.html") > -1 ||
-				location.href == "https://kamapeter.github.io/sal_digital/"?
+				document.body.getAttribute("data-page")?
 					filteredItems.forEach((prod, j) => {
 						dynamicCons[i].innerHTML +=
 							`<div class='itemCon'>
@@ -120,7 +119,7 @@ var DomUtils = {
 					DomUtils.initItemInfo(itemObj, inCart, id);
 					$(".overlay").addEventListener("click", (e) => {
 						e.target.style.display = "none";
-						$(".productPicCon .pics").innerHTML = "";
+						$(".pics").innerHTML = "";
 						$(".itemInfo").style.display = "none";
 					}, false);
 				}
@@ -188,8 +187,8 @@ var DomUtils = {
 			e.target.parentNode
 				.style.display = 'none';
 			$('.overlay').style.display = 'none';
-                        if($(".productPicCon .pic"))
-                                $(".productPicCon .pics").innerHTML = "";
+            if($(".productPicCon .pics"))
+                                $(".pics").innerHTML = "";
 		}
 	}
 
