@@ -390,35 +390,38 @@ footer >h3,h4{
 @media (min-width: 900px) {
   #mySideNav{
     display: block;
-    bottom: auto;
-    top: auto;
+    top: 50px;
     position: fixed;
-    min-height: fit-content;
     overflow-y: scroll;
     border-radius: 5px;
     margin: 5px 0;
+    grid-area: sideNav;
   }
   .topNav{
+    grid-area: nav;
     position: sticky;
     top: 0;
   }
   .big{
     display: block;
   }
-  .main{
-    margin-left: 300px;
-    position: sticky;
-    width: calc(100vw - 300px);
+  .main {
+    grid-area: main;
+  }
+  body{
+    display: grid;
+    grid-template-columns: 300px 10px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav"
+      "sideNav . main"
+      ". . footer";
   }
   .small{
     display: none;
   }
   .topNav .logolink{float: left;}
   .footer{
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    bottom: auto;
+    grid-area: footer;
   }
   .popup,body .itemInfo,.dialog{
     width: 600px;

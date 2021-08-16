@@ -177,7 +177,7 @@ var DomUtils = {
 			imgsNo = imgs.length;
 		if (imgs[current].classList.contains(inClass))
 			imgs[current].classList.replace(inClass, outClass);
-		current = Math.abs((current + inc)) % (imgsNo);
+		current = (current + inc + imgsNo) % (imgsNo);
 
 		if (imgs[current].classList.contains(outClass))
 			imgs[current].classList.replace(outClass, inClass);
